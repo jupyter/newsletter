@@ -4,18 +4,23 @@
 # Misc links to write about:
 
 
-## Prompt toolkit integration in IPython master:
+## prompt_toolkit in Jupyter Console and IPython
 
-https://github.com/ipython/ipython/pull/9118
+Our two terminal interfaces - Jupyter Console and IPython - have switched from
+using readline to [prompt_toolkit](https://pypi.python.org/pypi/prompt_toolkit),
+a pure Python library for terminal interaction. Code is now highlighted as you
+type, and multi-line editing and pasting are much improved. This should also
+make installation easier - we no longer need pyreadline on Windows or
+gnureadline on Mac.
 
-please try with 
+![Screenshot from IPython with prompt_toolkit](images/prompt_toolkit.png)
 
-```
-python3 -m IPython.terminal.ptshell
-```
+Jupyter Console is the Jupyter terminal frontend, which can communicate with
+kernels to run many different languages. IPython is the single-process Python
+shell. These changes will arrive in version 5.0 of each package.
 
-It will likely become the default in the future.
-
+* [IPython pull request](https://github.com/ipython/ipython/pull/9118)
+* [Jupyter Console pull request](https://github.com/jupyter/jupyter_console/pull/57)
 
 ## nbstripout
 
@@ -35,5 +40,3 @@ $ pip install nbstripout
 $ cd git/repository
 $ nbstripout install
 ```
-
-
