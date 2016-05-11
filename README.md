@@ -1,2 +1,5 @@
 # newsletter
-A repo for collecting content for the Jupyter Newsletter
+
+A repo for the Jupyter Newsletter
+
+[Link to Jupyter Newsletter](https://newsletter.jupyter.org)
